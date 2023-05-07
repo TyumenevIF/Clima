@@ -41,7 +41,7 @@
                                                 <rect key="frame" x="50" y="0.0" width="274" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="go"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqE-m3-9hc">
                                                 <rect key="frame" x="334" y="0.5" width="40" height="38.5"/>
@@ -52,6 +52,9 @@
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="magnifyingglass" catalog="system"/>
+                                                <connections>
+                                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mYA-Y3-Upw"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -118,6 +121,7 @@
                     <connections>
                         <outlet property="cityLabel" destination="rpI-hx-w2Y" id="x0w-2c-Q1y"/>
                         <outlet property="conditionImageView" destination="mJh-FR-iKU" id="h1o-1r-3u8"/>
+                        <outlet property="searchTextField" destination="kQC-iw-GdS" id="yTY-6X-svo"/>
                         <outlet property="temperatureLabel" destination="gW2-cY-jDc" id="pvG-vE-5Tj"/>
                     </connections>
                 </viewController>
